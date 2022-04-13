@@ -1,4 +1,4 @@
-# IDGL
+# CMGE
 
 Code & data accompanying  paper ["Cross-Regional Friendship Inference via Category-Aware Multi-Bipartite Graph Embedding"].
 
@@ -17,21 +17,21 @@ networkx==2.6.1
 
 ### Run the CMGE  models
 1、
-* Cd into the `RELINE` folder
+* cd into the `RELINE` folder
 * Run the multi-bipartite graph embedding process to obtain user feature, POI feature and category feature.
 
     ```
          python user_venue_catg_embedding.py
     ```
 2、
-* Cd into the `data_process` folder
+* cd into the `data_process` folder
 * Run the gat_graph to construct user-poi-category heterogenous graph
 
     ```
          python gat_graph.py
     ```
 3、
-* Cd into the `gat` folder
+* cd into the `gat` folder
 * Run the gat_embedding  to train  and test the model in unsupervised method
     ```
          python unsupervised_train.py
